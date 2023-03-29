@@ -8,5 +8,36 @@ public class Main<T> {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.show();
+        //remove headnode
+        Integer popData1 = linkedList.pop();
+        System.out.println("after pop: " + popData1);
+        linkedList.show();
+
+        LinkedList<Integer> linkedList1 = new LinkedList();
+        System.out.println("appending elements: ");
+        linkedList1.add(56);
+        linkedList1.add(30);
+        linkedList1.add(70);
+        linkedList1.show();
+        //remove last node
+        Integer popData2 = linkedList1.popLast();
+        System.out.println("after popLast: " + popData2);
+        linkedList1.show();
+        LinkedList<Integer> linkedList2 = new LinkedList();
+        linkedList2.add(70);
+        linkedList2.push(56);
+        System.out.println("before insert: ");
+        linkedList2.show();
+        linkedList2.insert(30);
+        System.out.println("after insert: ");
+        linkedList2.show();
+        //searching
+        Node<Integer> searcheddata = linkedList2.search(30);
+        if (searcheddata == null) {
+            System.out.println("element not found");
+        } else {
+            System.out.println("element found!!!");
+        }
     }
+
 }
