@@ -8,5 +8,14 @@ public class Main<T> {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.show();
+
+        LinkedList<Integer> linkedList1 = new LinkedList();
+        System.out.println("appending elements: ");
+        linkedList1.add(56);
+        linkedList1.add(30);
+        linkedList1.add(70);
+        linkedList1.show();
+
     }
+
 }

@@ -24,4 +24,17 @@ public class LinkedList<T> {
         }
         System.out.println();
     }
-}
+
+    public void add(T data) {
+        Node<T> newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+
+    }
